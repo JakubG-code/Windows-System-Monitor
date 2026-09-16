@@ -1,41 +1,55 @@
-# Windows System Monitor
+# Windows CPU Temperature Monitor
 
-Windows system monitoring application built with Python.
+Windows CPU temperature monitoring application built with Python.
 
 ## Overview
 
-This project provides a simple graphical interface for monitoring selected Windows system parameters.
+This project provides a simple graphical interface for monitoring CPU temperature on Windows systems.
+
+The application supports both real WMI monitoring and a simulation mode for testing the interface when CPU temperature sensors are unavailable.
 
 ## Features
 
-- CPU temperature monitoring
-- Graphical interface (Tkinter)
-- Automatic refresh every 2 seconds
-- WMI integration
-- psutil support
+* CPU temperature monitoring
+* Real WMI mode
+* Simulation mode
+* Graphical interface (Tkinter)
+* Automatic refresh every 2 seconds
+* WMI integration
+* Basic error handling
 
 ## Technologies
 
-- Python 3
-- Tkinter
-- psutil
-- WMI
+* Python 3
+* Tkinter
+* WMI
 
 ## Requirements
 
 ```bash
-pip install psutil WMI
+pip install WMI
 ```
 
 ## Run
 
 ```bash
-python sys-hmonitor-Tkinter-wmi-psutil.py
+python windows-cpu-temp-monitor.py
 ```
 
-## Screenshot
+## Screenshots
 
-Coming soon.
+### WMI Mode
+
+![WMI Mode](images/cpu_temperature_wmi.png)
+
+### Simulation Mode
+
+![Simulation Mode](images/cpu_temperature_simulation.png)
+
+## Future Improvements
+
+* Real CPU temperature monitoring using Libre Hardware Monitor
+* Extended hardware monitoring
 
 ## Author
 
